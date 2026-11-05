@@ -365,15 +365,11 @@ function card(i) {
   `;
 }
 
+
 function render() {
   if (screen === "home") {
     app.innerHTML = `
       <div class="shell home">
-        <img
-          class="cosmo-large"
-          src="Images/Cosmo.png"
-          alt="Cosmo the cosmic guide"
-        >
 
         <h1>COSMIC IDOLS</h1>
 
@@ -381,8 +377,16 @@ function render() {
           Collect. Explore. Unlock the Universe.
         </p>
 
-        <div class="cosmo-dialogue">
-          Hi, I'm Cosmo! Ready to explore the Solar System?
+        <div class="cosmo-speech">
+          <img
+            src="Images/Cosmo.png"
+            class="cosmo-avatar"
+            alt="Cosmo the cosmic guide"
+          >
+
+          <div class="cosmo-dialogue">
+            Hi, I'm Cosmo! Ready to explore the Solar System?
+          </div>
         </div>
 
         <nav class="home-menu">
@@ -390,6 +394,7 @@ function render() {
           <button data-action="collection">⭐ COLLECTION</button>
           <button data-action="map">🌌 GALAXY MAP</button>
         </nav>
+
       </div>
     `;
   }

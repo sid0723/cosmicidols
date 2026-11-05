@@ -672,3 +672,33 @@ body::after {
     box-shadow: 0 0 15px rgba(180, 130, 255, 0.7);
     transition: width 0.4s ease;
 }
+
+/* HOME SCREEN COSMO */
+
+.home .cosmo-speech {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin: 25px auto;
+    max-width: 550px;
+}
+
+.home .cosmo-avatar {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.home .cosmo-dialogue {
+    flex: 1;
+    text-align: left;
+}
+
+@media (max-width: 480px) {
+    .home .cosmo-avatar {
+        width: 80px;
+        height: 80px;
+    }
+}
