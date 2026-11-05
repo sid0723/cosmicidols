@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+
+    background:
+        radial-gradient(circle at 20% 30%, #39216b 0%, transparent 25%),
+        radial-gradient(circle at 80% 70%, #162c68 0%, transparent 25%),
+        linear-gradient(135deg, #050014, #09002b, #02000d);
+
+    overflow: hidden;
+}
+
+.home-screen {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+    letter-spacing: 8px;
+    margin-bottom: 15px;
+
+    text-shadow:
+        0 0 10px white,
+        0 0 25px #9b7cff,
+        0 0 50px #6c4cff;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    margin-bottom: 60px;
+    opacity: 0.85;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+}
+
+.menu button {
+    padding: 18px;
+
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(8px);
+
+    transition: 0.25s;
+}
+
+.menu button:hover {
+    transform: scale(1.05);
+
+    background: rgba(255, 255, 255, 0.18);
+
+    box-shadow:
+        0 0 15px rgba(255, 255, 255, 0.4),
+        0 0 30px rgba(130, 100, 255, 0.4);
+}/* GAME SCREEN */
+
+.game-screen {
+    min-height: 100vh;
+    padding: 40px;
+    text-align: center;
+}
+
+.game-screen h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.game-subtitle {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+.game-stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.stat {
+    padding: 15px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+}
+
+.stat-title {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    letter-spacing: 2px;
+}
+
+.stat-value {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.collect-area {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(10px);
+}
+
+.collect-area h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.collect-area p {
+    opacity: 0.8;
+    margin-bottom: 25px;
+}
+
+.summon-button {
+    padding: 18px 40px;
+    border: none;
+    border-radius: 15px;
+    background: rgba(150, 100, 255, 0.5);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.summon-button:hover {
+    transform: scale(1.05);
+    box-shadow:
+        0 0 20px rgba(150, 100, 255, 0.6),
+        0 0 40px rgba(100, 80, 255, 0.4);
+}
+
+.back-button {
+    margin-top: 40px;
+    padding: 12px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}/* COSMIC IDOL CARD */
+
+.idol-card {
+    padding: 20px;
+}
+
+.idol-icon {
+    font-size: 5rem;
+    margin-bottom: 15px;
+    text-shadow:
+        0 0 15px white,
+        0 0 30px #9b7cff;
+}
+
+.idol-card h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.idol-rarity {
+    color: #d6c7ff;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.idol-card p:not(.idol-rarity) {
+    opacity: 0.8;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
