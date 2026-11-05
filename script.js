@@ -164,7 +164,7 @@ function escapeHtml(s) {
 function cosmo(message) {
   return `
     <div class="cosmo-speech">
-      <img src="images/cosmo.png" class="cosmo-avatar" alt="Cosmo">
+      <img src="images/Cosmo.png" class="cosmo-avatar" alt="Cosmo">
       <div class="cosmo-dialogue">${escapeHtml(message)}</div>
     </div>
   `;
@@ -310,7 +310,7 @@ function card(i) {
 
 <div class="object-icon">
   ${i === 0
-    ? '<img src="images/sun.png" alt="The Sun" class="planet-image">'
+    ? '<img src="images/Sun.png" alt="The Sun" class="planet-image">'
     : p.icon}
 </div>
 
@@ -371,7 +371,7 @@ function render() {
       <div class="shell home">
         <img
           class="cosmo-large"
-          src="images/cosmo.png"
+          src="images/Cosmo.png"
           alt="Cosmo the cosmic guide"
         >
 
@@ -455,7 +455,7 @@ function render() {
 <div class="object-icon">
   ${i < game.owned
     ? (i === 0
-        ? '<img src="images/sun.png" alt="The Sun" class="planet-image">'
+        ? '<img src="images/Sun.png" alt="The Sun" class="planet-image">'
         : p.icon)
     : "🔒"}
 </div>
